@@ -79,7 +79,8 @@ void codificador(string s)
 
 
 int main()
-{
+{     
+    \\Algoritmo de compressão LZ8
     ofstream arqSaida;
     arqSaida.open("string.txt");
     arqSaida << "bananabananabofana";
