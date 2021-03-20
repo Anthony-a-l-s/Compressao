@@ -7,12 +7,15 @@ using namespace std;
 
 void decodificador(vector<string> d)
 {
-    
+    string s;
     cout<<"Decodificando"<<endl;
     for(int i = 1; i < d.size(); i++)
     {
-        cout<<d[i];
+        string aux;
+        aux = d[i];
+        s.append(aux);
     }
+    cout<<s<<endl;
 }
 void codificador(string s)
 {
@@ -85,13 +88,11 @@ int main()
     string str;
     arqEntrada.open("string.txt");
     if(arqEntrada.is_open()){
-        while(getline(arqEntrada,str)){
-           
-        }
+
+        getline(arqEntrada,str);    
 
     }else
     cout<<"Erro!"<<endl;
-
     codificador(str);
     return 0;
 }
